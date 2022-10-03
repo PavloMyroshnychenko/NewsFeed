@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Feed-->
+        <scene sceneID="5np-ln-CUe">
+            <objects>
+                <viewController storyboardIdentifier="NewsFeedViewController" id="XuQ-7S-Chh" customClass="NewsFeedViewController" customModule="PecodeTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3xB-Tl-JPO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K78-sM-FRp">
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="aUw-F4-hiA">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="XuQ-7S-Chh" id="LTl-5y-C5R"/>
+                                    </connections>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QsH-h5-2MJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K78-sM-FRp" firstAttribute="top" secondItem="QsH-h5-2MJ" secondAttribute="top" id="2qQ-bL-ivw"/>
+                            <constraint firstAttribute="bottom" secondItem="K78-sM-FRp" secondAttribute="bottom" id="LlB-sX-Peo"/>
+                            <constraint firstItem="K78-sM-FRp" firstAttribute="leading" secondItem="QsH-h5-2MJ" secondAttribute="leading" id="TbX-yd-vAJ"/>
+                            <constraint firstItem="QsH-h5-2MJ" firstAttribute="trailing" secondItem="K78-sM-FRp" secondAttribute="trailing" id="UtZ-ei-60o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News Feed" id="Fr3-5E-aPn">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="6PN-dZ-vXj">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="8Vn-hg-O8F">
+                                    <rect key="frame" x="280.33333333333331" y="5" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="favouriteButtonTapped:" destination="XuQ-7S-Chh" eventType="touchUpInside" id="4DA-Vx-tHC"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="1eW-JW-QmM">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Aby-c7-scy">
+                                    <rect key="frame" x="16" y="5" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Filter"/>
+                                    <connections>
+                                        <action selector="filterButtonTapped:" destination="XuQ-7S-Chh" eventType="touchUpInside" id="8JB-xK-x2g"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="K78-sM-FRp" id="g78-d7-yDa"/>
+                        <outlet property="searchBar" destination="aUw-F4-hiA" id="cNb-VP-25L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66G-HG-WBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="-20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
