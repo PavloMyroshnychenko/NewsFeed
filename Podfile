@@ -13,7 +13,7 @@ target 'PecodeTestTask' do
   pod 'Locksmith'
   pod 'Kingfisher', '~> 7.0'
 
-  # Pods for Template_project MVP
+  # Pods for PecodeTestTask
 
 end
 

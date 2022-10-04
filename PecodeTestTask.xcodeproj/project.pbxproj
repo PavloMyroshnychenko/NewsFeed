@@ -40,7 +40,6 @@
 		AE9167EC2625C406004C02D9 /* UIViewController+NibRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9167EB2625C406004C02D9 /* UIViewController+NibRepresentable.swift */; };
 		AE9167F12625C46D004C02D9 /* NibRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9167F02625C46D004C02D9 /* NibRepresentable.swift */; };
 		AE9167F62625C5D5004C02D9 /* Collection+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9167F52625C5D5004C02D9 /* Collection+SafeSubscript.swift */; };
-		AEF4D18F260E2E18002D2F1F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF4D18E260E2E18002D2F1F /* Localizable.strings */; };
 		AEF4D197260E30CC002D2F1F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF4D196260E30CC002D2F1F /* String+Localized.swift */; };
 		AEF4D19C260E30E1002D2F1F /* UIView+NibRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF4D19B260E30E1002D2F1F /* UIView+NibRepresentable.swift */; };
 		AEF4D1A1260E3119002D2F1F /* UICollectionView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF4D1A0260E3119002D2F1F /* UICollectionView+Cell.swift */; };
@@ -96,7 +95,6 @@
 		AE9167EB2625C406004C02D9 /* UIViewController+NibRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibRepresentable.swift"; sourceTree = "<group>"; };
 		AE9167F02625C46D004C02D9 /* NibRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRepresentable.swift; sourceTree = "<group>"; };
 		AE9167F52625C5D5004C02D9 /* Collection+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeSubscript.swift"; sourceTree = "<group>"; };
-		AEF4D18E260E2E18002D2F1F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AEF4D196260E30CC002D2F1F /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		AEF4D19B260E30E1002D2F1F /* UIView+NibRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibRepresentable.swift"; sourceTree = "<group>"; };
 		AEF4D1A0260E3119002D2F1F /* UICollectionView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Cell.swift"; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				AE81613D26050874000D3366 /* Extetnsions */,
 				AE81613F26050874000D3366 /* Protocols */,
 				AE81614226050874000D3366 /* Services */,
-				AEF4D18E260E2E18002D2F1F /* Localizable.strings */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -457,7 +454,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF4D18F260E2E18002D2F1F /* Localizable.strings in Resources */,
 				AE81615926050874000D3366 /* Main.storyboard in Resources */,
 				A4E471F82669954700BFF45A /* Debug.xcconfig in Resources */,
 				AE81615C26050874000D3366 /* NewsFeedViewController.storyboard in Resources */,
@@ -732,7 +728,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.israelIT.Template-project--MVP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pm.pecodetesttask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -756,7 +752,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.israelIT.Template-project--MVP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pm.pecodetesttask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
